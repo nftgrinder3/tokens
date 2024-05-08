@@ -8,6 +8,8 @@ const bot2 = new Eris(process.env.token2);
 const bot3 = new Eris(process.env.token3);
 const bot4 = new Eris(process.env.token4);
 const bot5 = new Eris(process.env.token5);
+const bot6 = new Eris(process.env.token6);
+const bot7 = new Eris(process.env.token7);
 
 bot.on("error", (err) => {
   console.error(err); // or your preferred logger
@@ -27,6 +29,12 @@ bot4.on("error", (err) => {
 bot5.on("error", (err) => {
   console.error(err); // or your preferred logger
 });
+bot6.on("error", (err) => {
+  console.error(err); // or your preferred logger
+});
+bot7.on("error", (err) => {
+  console.error(err); // or your preferred logger
+});
 
 bot.connect(); // Get the bot to connect to Discord
 bot1.connect(); // Get the bot to connect to Discord
@@ -34,3 +42,5 @@ bot2.connect(); // Get the bot to connect to Discord
 bot3.connect(); // Get the bot to connect to Discord
 bot4.connect(); // Get the bot to connect to Discord
 bot5.connect(); // Get the bot to connect to Discord
+bot6.connect(); // Get the bot to connect to Discord
+bot7.connect(); // Get the bot to connect to Discord
